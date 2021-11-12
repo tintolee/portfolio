@@ -24,16 +24,16 @@ function Home2() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> Javascript(reactJS, expressJS, ) and Python(django). </b>
+                <b className="purple"> Javascript(reactJS, expressJS, ) and Python (django). </b>
               </i>
               <br />
               <br />
               My field of Interests are building new &nbsp;
               <i>
-                <b className="purple">web and mobile Technologies/Products </b> and
+                <b className="purple">web and mobile products </b> and
                 also in areas related to{" "}
                 <b className="purple">
-                  Health care solution products
+                  health care solution products
                 </b>
               </i>
               <br />
