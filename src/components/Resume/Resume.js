@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import Resumecontent from "./ResumeContent";
 import axios from "axios";
-import pdf from "../../Assets/Soumyajit-Behera.pdf";
+import pdf from "../../Assets/Oluwatosin_resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 
 function Resume() {
@@ -42,11 +42,11 @@ function Resume() {
           <Col md={6} className="resume-left">
             <h3 className="resume-title">Experience</h3>
             <Resumecontent
-              title="Frontend Developer Intern [Flash Tech]"
-              date="July 2021 - September 2021"
+              title="Frontend Developer[Savannah Health Systems Innovation]"
+              date="October 2020 - 2021"
               content={[
                 "Worked on the development of an E-commerce website",
-                "Redesigned Wigme.com and created features to enhance the user experience and optimized designs for smartphones.",
+                "Redesigned several web apps and created features to enhance the user experience and optimized designs for smartphones.",
                 " Translated designs and wireframes into a highly responsive user interface and reusable components using React.js.",
                 "Used Back-End APIs to display data using the Custom Components, library Components, and Redux.",
                 "Used JIRA as the bug tracking system to track and maintain the history of bugs/issues on an everyday basis.",
@@ -56,7 +56,7 @@ function Resume() {
             <Resumecontent
               title="Web Developer [Pantheon-2019 Technical Fest of BIT Mesra]"
               content={[
-                "Worked on building front-end UI design using HTML5, CSS3, JavaScript jQuery, and building API routes using Node and express.js.",
+                "Worked on building front-end UI design using HTML5, CSS3, React, and building API routes using Node and express.js.",
               ]}
             />
           </Col>
