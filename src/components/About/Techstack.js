@@ -1,14 +1,14 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-
+import { SiTypescript } from "react-icons/si";
 import {
   DiJavascript1,
   DiReact,
   DiNodejs,
   DiMongodb,
-  DiPython,
+  DiDjango,
   DiGit,
-  DiTypescript
+  
 } from "react-icons/di";
 import {SiTensorflow, SiFirebase } from "react-icons/si";
 
@@ -16,7 +16,7 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <DiTypescript />
+        <SiTypescript/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />   
@@ -31,7 +31,7 @@ function Techstack() {
         <DiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+        <DiDjango />
       </Col>
      
       <Col xs={4} md={2} className="tech-icons">
