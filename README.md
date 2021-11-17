@@ -3,7 +3,7 @@
   <a href="http://oluwatosin-dev.netlify.app/" target="_blank">oluwatosin-dev.netlify.app</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
+  <img alt="Demo" src="" />
 </div>
 
 <br/>
