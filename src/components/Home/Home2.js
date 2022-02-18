@@ -24,7 +24,7 @@ function Home2() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> Javascript(reactJS, expressJS, ) and Python (django). </b>
+                <b className="purple"> React, React Native, NestJs ,ExpressJs and Python (django). </b>
               </i>
               <br />
               <br />
@@ -48,7 +48,7 @@ function Home2() {
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> React.js , React Native</b>
               </i>
             </p>
           </Col>
