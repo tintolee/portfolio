@@ -17,7 +17,7 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing football
+              <ImPointRight /> Playing football or watching my favourite FC Barcelona
             </li>
             <li className="about-activity">
               <ImPointRight /> Writting Tech Blogs
@@ -28,9 +28,9 @@ function AboutCard() {
           </ul>
 
           <p style={{ marginBlockEnd: 0, color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "Let’s go invent tomorrow instead of worrying about what happened yesterday.!"{" "}
           </p>
-          <footer className="blockquote-footer">Oluwatosin</footer>
+          <footer className="blockquote-footer">Steve Jobs</footer>
         </blockquote>
       </Card.Body>
     </Card>
