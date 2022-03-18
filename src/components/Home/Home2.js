@@ -24,7 +24,7 @@ function Home2() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> React, React Native,NextJs NestJs ,ExpressJs and Python (django). </b>
+                <b className="purple"> React, React Native,NextJs, NestJs ,ExpressJs and Python (django). </b>
               </i>
               <br />
               <br />
