@@ -1,51 +1,94 @@
-import React from "react";
-import Particles from "react-particles-js";
+import React, { useCallback } from "react";
+import Particles from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
 
 function Particle() {
+  const particlesInit = useCallback(async (engine) => {
+    await loadSlim(engine);
+  }, []);
+
+  const particlesLoaded = useCallback(async (container) => {
+    // Particles loaded callback
+  }, []);
+
   return (
     <Particles
-      params={{
-        particles: {
-          number: {
-            value: 160,
-            density: {
-              enable: true,
-              value_area: 1500,
-            },
-          },
-          line_linked: {
-            enable: false,
-            opacity: 0.03,
-          },
-          move: {
-            direction: "right",
-            speed: 0.05,
-          },
-          size: {
-            value: 1,
-          },
-          opacity: {
-            anim: {
-              enable: true,
-              speed: 1,
-              opacity_min: 0.05,
-            },
+      id="tsparticles"
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={{
+        background: {
+          color: {
+            value: "transparent",
           },
         },
+        fpsLimit: 120,
         interactivity: {
           events: {
-            onclick: {
+            onClick: {
               enable: true,
               mode: "push",
             },
+            onHover: {
+              enable: true,
+              mode: "repulse",
+            },
+            resize: true,
           },
           modes: {
             push: {
-              particles_nb: 1,
+              quantity: 4,
+            },
+            repulse: {
+              distance: 100,
+              duration: 0.4,
             },
           },
         },
-        retina_detect: true,
+        particles: {
+          color: {
+            value: "#a855f7",
+          },
+          links: {
+            color: "#a855f7",
+            distance: 150,
+            enable: false,
+            opacity: 0.3,
+            width: 1,
+          },
+          move: {
+            direction: "none",
+            enable: true,
+            outModes: {
+              default: "bounce",
+            },
+            random: false,
+            speed: 0.5,
+            straight: false,
+          },
+          number: {
+            density: {
+              enable: true,
+              area: 1500,
+            },
+            value: 160,
+          },
+          opacity: {
+            value: { min: 0.05, max: 0.5 },
+            animation: {
+              enable: true,
+              speed: 1,
+              sync: false,
+            },
+          },
+          shape: {
+            type: "circle",
+          },
+          size: {
+            value: { min: 1, max: 3 },
+          },
+        },
+        detectRetina: true,
       }}
     />
   );

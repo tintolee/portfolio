@@ -1,0 +1,14 @@
+{
+  "name": "realtime-collab-server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "docker:build": "docker build -t realtime-collab-server .",
+    "docker:run": "docker run --rm -p 4000:4000 realtime-collab-server"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}

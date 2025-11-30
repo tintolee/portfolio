@@ -1,0 +1,10 @@
+# dependencies
+node_modules
+
+# builds
+.next
+out
+
+# misc
+.DS_Store
+*.log

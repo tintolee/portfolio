@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="50%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0b0d17" />
+  <rect x="40" y="40" width="1120" height="550" rx="32" fill="url(#g)" opacity="0.15" />
+  <text x="60" y="200" font-size="86" font-family="Inter, Poppins, Arial, sans-serif" fill="white" font-weight="700">Oluwatosin Adelaja</text>
+  <text x="60" y="300" font-size="48" font-family="Inter, Arial, sans-serif" fill="#c4b5fd" font-weight="500">React & React Native Engineer</text>
+  <text x="60" y="380" font-size="34" font-family="Inter, Arial, sans-serif" fill="#ffffff" opacity="0.85">Web + mobile apps, scalable architectures, technical writing.</text>
+</svg>

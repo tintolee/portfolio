@@ -1,43 +1,33 @@
-import React, { useState, useEffect } from "react";
-import Preloader from "../src/components/Pre";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
-import Footer from "./components/Footer";
-import Resume from "./components/Resume/ResumeNew";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./style.css";
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-
-import ScrollToTop from "./components/ScrollToTop";
+import React, { Suspense, lazy } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './index.css';
+import Layout from './components/layout/Layout';
+const Home = lazy(() => import(/* webpackChunkName: "home" */ './pages/Home'));
+const About = lazy(() => import(/* webpackChunkName: "about" */ './pages/About'));
+const Projects = lazy(() => import(/* webpackChunkName: "projects" */ './pages/Projects'));
+const Skills = lazy(() => import(/* webpackChunkName: "skills" */ './pages/Skills'));
+const Experience = lazy(() => import(/* webpackChunkName: "experience" */ './pages/Experience'));
+const Contact = lazy(() => import(/* webpackChunkName: "contact" */ './pages/Contact'));
+const Writing = lazy(() => import(/* webpackChunkName: "writing" */ './pages/Writing'));
+const NotFound = lazy(() => import(/* webpackChunkName: "not-found" */ './pages/NotFound'));
 
 function App() {
-  const [load, upadateLoad] = useState(true);
-  
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
-    
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <Router>
-      <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
-        <ScrollToTop />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/project" component={Projects} />
-          <Route path="/about" component={About} />
-          <Route path="/resume" component={Resume} />
-        </Switch>
-        <Footer />
-      </div>
+      <Layout>
+        <Suspense fallback={<div className="pt-32 text-center text-sm text-brand-glow animate-pulse">Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/writing" element={<Writing />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
+      </Layout>
     </Router>
   );
 }

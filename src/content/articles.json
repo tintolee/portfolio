@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "engineering-for-scale",
+    "title": "Engineering for Scale: Building resilient systems in Africa’s next digital decade",
+    "summary": "A practical framework for designing resilient, observable systems that gracefully handle failure and uncertainty in African contexts.",
+    "url": "https://technext24.com/2025/10/22/engineering-for-scale-building-systems/#google_vignette"
+  },
+  {
+    "slug": "open-banking-africa-2025",
+    "title": "The Open Banking Revolution: How Africa Is Redefining Financial Innovation Beyond 2025",
+    "summary": "Why Africa’s next phase of Open Banking depends on secure APIs, consent management, and compliance-by-design to scale inclusion.",
+    "url": "https://techcabal.com/2025/10/20/the-open-banking-revolution-how-africa-is-redefining-financial-innovation-beyond-2025/"
+  },
+  {
+    "slug": "liaison-link-architecture",
+    "title": "Liaison Link Architecture Article",
+    "summary": "An architectural overview of Liaison Link illustrating secure, modular integration patterns for complex systems.",
+    "url": "https://www.researchgate.net/publication/398124449_Liaison_Link_Architecture_Article"
+  },
+  {
+    "slug": "healthcare-payment-security-innovation",
+    "title": "Healthcare Payment Security Innovation",
+    "summary": "A production-tested architecture for secure, idempotent healthcare payments using OAuth2, hardware encryption, certificate pinning, and offline-first design.",
+    "url": "https://www.researchgate.net/publication/398131025_Healthcare_Payment_Security_Innovation"
+  }
+]

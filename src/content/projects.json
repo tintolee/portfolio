@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "design-system",
+    "title": "Design System Toolkit",
+    "summary": "Modular, accessible component library and token pipeline accelerating UI iteration across products.",
+    "stack": ["React", "TypeScript", "Storybook", "Tailwind"],
+    "url": "#"
+  },
+  {
+    "slug": "realtime-collab",
+    "title": "Realtime Collaboration Suite",
+    "summary": "OT + CRDT editor enabling presence, comments, offline sync, and conflict resolution.",
+    "stack": ["React", "WebSocket", "CRDT", "Node"],
+    "url": "#"
+  },
+  {
+    "slug": "performance-dashboard",
+    "title": "Performance Insights Dashboard",
+    "summary": "Dashboards aggregating core web vitals, error traces, and release metrics for engineering teams.",
+    "stack": ["Next.js", "D3", "PostgreSQL"],
+    "url": "#"
+  }
+]

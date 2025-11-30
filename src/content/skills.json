@@ -1,0 +1,10 @@
+[
+  {"name":"JavaScript","level":"Expert"},
+  {"name":"TypeScript","level":"Advanced"},
+  {"name":"React","level":"Expert"},
+  {"name":"Node.js","level":"Advanced"},
+  {"name":"GraphQL","level":"Intermediate"},
+  {"name":"PostgreSQL","level":"Intermediate"},
+  {"name":"CI/CD","level":"Advanced"},
+  {"name":"Accessibility","level":"Advanced"}
+]

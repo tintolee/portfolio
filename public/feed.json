@@ -1,0 +1,27 @@
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "Oluwatosin Adelaja Portfolio Feed",
+  "home_page_url": "https://www.oluwatosinadelaja.com/",
+  "feed_url": "https://www.oluwatosinadelaja.com/feed.json",
+  "description": "Updates and new projects from Oluwatosin Adelaja.",
+  "items": [
+    {
+      "id": "design-system",
+      "url": "https://www.oluwatosinadelaja.com/projects#design-system",
+      "title": "Design System Toolkit",
+      "content_text": "Modular, accessible component library and token pipeline accelerating UI iteration across products."
+    },
+    {
+      "id": "realtime-collab",
+      "url": "https://www.oluwatosinadelaja.com/projects#realtime-collab",
+      "title": "Realtime Collaboration Suite",
+      "content_text": "OT + CRDT editor enabling presence, comments, offline sync, and conflict resolution."
+    },
+    {
+      "id": "performance-dashboard",
+      "url": "https://www.oluwatosinadelaja.com/projects#performance-dashboard",
+      "title": "Performance Insights Dashboard",
+      "content_text": "Dashboards aggregating core web vitals, error traces, and release metrics for engineering teams."
+    }
+  ]
+}

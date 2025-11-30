@@ -8,10 +8,6 @@
 
 <br/>
 
-
-
-
-
 ## Built With
 
 My personal portfolio <a href="http://oluwatosin-dev.netlify.app/" target="_blank">oluwatosin-dev.netlify.app/</a> which features some of my github projects as well as my resume and technical skills.<br/>
@@ -51,3 +47,13 @@ The page will reload if you make edits.
 
 Open the project folder and Navigate to `/src/components/`. <br/>
 You will find all the components used and you can edit your information accordingly.
+
+## Project Builds
+
+This repo includes a `projects/` workspace to build the showcased samples:
+
+- `projects/design-system` — Design System Toolkit
+- `projects/realtime-collab` — Realtime Collaboration Suite
+- `projects/performance-dashboard` — Performance Insights Dashboard
+
+See `projects/README.md` for scope and next steps.

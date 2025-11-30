@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Oluwatosin Adelaja Portfolio Feed</title>
+    <link>https://www.oluwatosinadelaja.com/</link>
+    <description>Updates and new projects from Oluwatosin Adelaja.</description>
+    <language>en</language>
+    <item>
+      <title>Design System Toolkit</title>
+      <link>https://www.oluwatosinadelaja.com/projects#design-system</link>
+      <description>Modular, accessible component library and token pipeline accelerating UI iteration across products.</description>
+    </item>
+    <item>
+      <title>Realtime Collaboration Suite</title>
+      <link>https://www.oluwatosinadelaja.com/projects#realtime-collab</link>
+      <description>OT + CRDT editor enabling presence, comments, offline sync, and conflict resolution.</description>
+    </item>
+    <item>
+      <title>Performance Insights Dashboard</title>
+      <link>https://www.oluwatosinadelaja.com/projects#performance-dashboard</link>
+      <description>Dashboards aggregating core web vitals, error traces, and release metrics for engineering teams.</description>
+    </item>
+  </channel>
+</rss>
