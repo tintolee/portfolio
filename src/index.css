@@ -3,27 +3,25 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
+  html { scroll-behavior: smooth; }
+
+  /* Light mode defaults */
   body {
-    @apply bg-bg text-white font-sans antialiased;
-    background: radial-gradient(circle at 20% 20%, #1a1f2f 0%, #0b0d17 60%);
+    @apply bg-white text-gray-900 font-sans antialiased;
+    background: radial-gradient(circle at 20% 20%, #f3f6fb 0%, #ffffff 60%);
     min-height: 100vh;
   }
-  ::selection {
-    background: #8b5cf6;
-    color: #fff;
+
+  /* Dark mode overrides */
+  .dark body {
+    @apply bg-bg text-white;
+    background: radial-gradient(circle at 20% 20%, #1a1f2f 0%, #0b0d17 60%);
   }
-  :focus-visible {
-    outline: none;
-  }
-  *:focus-visible {
-    @apply ring-2 ring-brand-purple ring-offset-2 ring-offset-bg transition;
-  }
-  .skip-link {
-    @apply sr-only focus:not-sr-only;
-  }
+
+  ::selection { background: #8b5cf6; color: #fff; }
+  :focus-visible { outline: none; }
+  *:focus-visible { @apply ring-2 ring-brand-purple ring-offset-2 ring-offset-white dark:ring-offset-bg transition; }
+  .skip-link { @apply sr-only focus:not-sr-only; }
 }
 
 @layer components {
@@ -35,12 +33,10 @@
     -webkit-background-clip: text;
     @apply text-transparent font-display font-semibold tracking-tight;
   }
-  .glass-card {
-    @apply rounded-2xl bg-white/5 backdrop-blur-md shadow-glass border border-white/10 transition;
-  }
-  .glass-card:hover {
-    @apply shadow-glow border-brand-glow;
-  }
+  /* Card surface: light default with dark override */
+  .glass-card { @apply rounded-2xl bg-white/70 backdrop-blur-md shadow-soft border border-gray-200 transition; }
+  .dark .glass-card { @apply bg-white/5 shadow-glass border-white/10; }
+  .glass-card:hover { @apply shadow-glow border-brand-glow; }
   .btn-primary-new {
     @apply inline-flex items-center gap-2 px-5 py-3 rounded-xl font-medium bg-gradient-to-r from-brand-purple via-brand-glow to-brand-pink shadow-soft hover:shadow-glow hover:-translate-y-0.5 active:translate-y-0 transition;
   }

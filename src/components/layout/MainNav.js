@@ -17,7 +17,9 @@ function MainNav() {
   const [scrolled, setScrolled] = useState(false);
   const [theme, setTheme] = useState(() => {
     if (typeof window !== 'undefined') {
-      return localStorage.getItem('theme') || 'dark';
+      const stored = localStorage.getItem('theme');
+      if (stored) return stored;
+      return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
     return 'dark';
   });
@@ -34,19 +36,19 @@ function MainNav() {
   }, [theme]);
 
   return (
-    <header className={`fixed top-0 inset-x-0 z-50 transition ${scrolled ? 'backdrop-blur-md bg-bg/80 shadow-glass' : 'bg-transparent'} `}>
+    <header className={`fixed top-0 inset-x-0 z-50 transition ${scrolled ? 'backdrop-blur-md bg-white/80 dark:bg-bg/80 shadow-glass' : 'bg-transparent'} `}>
       <nav className="container-responsive flex items-center justify-between h-20">
         <Link to="/" className="text-xl font-display font-semibold gradient-text">Oluwatosin</Link>
         <div className="flex items-center gap-4">
           <button
             aria-label="Toggle color theme"
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className="rounded-xl px-3 py-2 bg-white/5 hover:bg-white/10 border border-white/10 text-sm transition focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
+            className="rounded-xl px-3 py-2 bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 border border-black/10 dark:border-white/10 text-sm transition focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
           >
             {theme === 'dark' ? 'Light' : 'Dark'}
           </button>
           <button
-            className="sm:hidden inline-flex items-center justify-center rounded-xl p-2 bg-white/5 border border-white/10"
+            className="sm:hidden inline-flex items-center justify-center rounded-xl p-2 bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10"
             onClick={() => setOpen(!open)}
             aria-label="Toggle navigation menu"
           >
@@ -58,7 +60,7 @@ function MainNav() {
             <li key={l.to}>
               <NavLink
                 to={l.to}
-                className={({ isActive }) => `text-sm font-medium tracking-wide relative group ${isActive ? 'text-brand-purple' : 'text-white/80 hover:text-white'}`}
+                className={({ isActive }) => `text-sm font-medium tracking-wide relative group ${isActive ? 'text-brand-purple' : 'text-gray-700 hover:text-gray-900 dark:text-white/80 dark:hover:text-white'}`}
               >
                 <span>{l.label}</span>
                 <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-gradient-to-r from-brand-purple to-brand-pink group-hover:w-full transition-all" />
@@ -81,7 +83,7 @@ function MainNav() {
                   <NavLink
                     to={l.to}
                     onClick={() => setOpen(false)}
-                    className={({ isActive }) => `block px-3 py-2 rounded-lg text-sm font-medium ${isActive ? 'bg-brand-purple/20 text-brand-purple' : 'text-white/80 hover:bg-white/10 hover:text-white'}`}
+                    className={({ isActive }) => `block px-3 py-2 rounded-lg text-sm font-medium ${isActive ? 'bg-brand-purple/20 text-brand-purple' : 'text-gray-700 hover:bg-black/5 hover:text-black dark:text-white/80 dark:hover:bg-white/10 dark:hover:text-white'}`}
                   >
                     {l.label}
                   </NavLink>
