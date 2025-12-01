@@ -19,10 +19,10 @@ function Experience() {
               <Card>
               <div className="flex items-baseline justify-between flex-wrap gap-2">
                 <h3 className="font-semibold text-lg">{role.title} – {role.company}</h3>
-                <span className="text-xs text-white/50">{role.period}</span>
+                <span className="text-xs text-gray-500 dark:text-white/50">{role.period}</span>
               </div>
-              <p className="mt-2 text-sm text-white/70">{role.summary}</p>
-              <ul className="mt-3 space-y-1 text-xs text-white/60 list-disc list-inside">
+              <p className="mt-2 text-sm text-gray-600 dark:text-white/70">{role.summary}</p>
+              <ul className="mt-3 space-y-1 text-xs text-gray-600 dark:text-white/60 list-disc list-inside">
                 {role.highlights.map(h => <li key={h}>{h}</li>)}
               </ul>
               </Card>

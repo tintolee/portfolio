@@ -28,7 +28,7 @@ function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="mt-6 text-white/70 max-w-prose"
+              className="mt-6 text-gray-600 dark:text-white/70 max-w-prose"
             >
               I build production-grade web and mobile applications using React and React Native, design scalable architectures, and share knowledge through technical writing. Focused on accessibility, performance, and developer experience.
             </motion.p>

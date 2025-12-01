@@ -24,7 +24,7 @@ function Projects() {
             >
               <Card interactive className="flex flex-col h-full">
                 <h3 className="font-semibold text-lg mb-1">{p.title}</h3>
-                <p className="text-sm text-white/70 flex-1">{p.summary}</p>
+                <p className="text-sm text-gray-600 dark:text-white/70 flex-1">{p.summary}</p>
                 <div className="mt-4 flex flex-wrap gap-1">
                   {p.stack.map(s => <span key={s} className="text-[11px] px-2 py-1 rounded-full bg-brand-purple/20 text-brand-purple">{s}</span>)}
                 </div>

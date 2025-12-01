@@ -18,7 +18,7 @@ function Skills() {
             <motion.div key={s.name} initial={{opacity:0,y:12}} whileInView={{opacity:1,y:0}} viewport={{once:true}}>
               <Card className="p-4">
                 <h3 className="font-medium text-sm">{s.name}</h3>
-                <p className="text-xs text-white/50 mt-1">{s.level}</p>
+                <p className="text-xs text-gray-500 dark:text-white/60 mt-1">{s.level}</p>
               </Card>
             </motion.div>
           ))}

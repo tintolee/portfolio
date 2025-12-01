@@ -16,7 +16,7 @@ export default function Writing() {
           {articles.map(a => (
             <Card key={a.slug} className="glass-card p-6">
               <h2 className="text-xl font-semibold mb-2">{a.title}</h2>
-              <p className="text-white/70 mb-4">{a.summary}</p>
+              <p className="text-gray-600 dark:text-white/70 mb-4">{a.summary}</p>
               <a href={a.url} className="btn-primary-new" aria-label={`Read article ${a.title}`}>Read Article</a>
             </Card>
           ))}

@@ -28,9 +28,9 @@ function Avatar({ size = 'lg', className = '' }) {
         src={avatarSrc}
         alt="Professional headshot"
         loading="lazy"
-        className="object-cover w-full h-full rounded-2xl border border-white/10 shadow-soft hover:shadow-glow transition"
+        className="object-cover w-full h-full rounded-2xl border border-gray-200 dark:border-white/10 shadow-soft hover:shadow-glow transition"
       />
-      <span className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-white/10" />
+      <span className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-black/10 dark:ring-white/10" />
     </motion.div>
   );
 }

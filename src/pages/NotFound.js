@@ -10,7 +10,7 @@ export default function NotFound() {
         <meta name="robots" content="noindex" />
       </Helmet>
       <h1 className="gradient-text text-5xl mb-6">404</h1>
-      <p className="text-lg text-white/70 mb-8">The page you are looking for does not exist.</p>
+      <p className="text-lg text-gray-600 dark:text-white/70 mb-8">The page you are looking for does not exist.</p>
       <Link to="/" className="btn-primary-new">Go Home</Link>
     </div>
   );
