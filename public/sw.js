@@ -1,4 +1,4 @@
-const CACHE_NAME = 'portfolio-v1';
+const CACHE_NAME = 'portfolio-v2';
 const OFFLINE_URL = '/offline.html';
 
 self.addEventListener('install', event => {
@@ -20,23 +20,37 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
   const { request } = event;
-  if (request.mode === 'navigate') {
+  const url = new URL(request.url);
+  
+  // Only handle same-origin navigations for offline fallback
+  if (request.mode === 'navigate' && url.origin === location.origin) {
     event.respondWith(
-      fetch(request).catch(() => caches.open(CACHE_NAME).then(cache => cache.match(OFFLINE_URL)))
+      Promise.race([
+        fetch(request),
+        new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), 8000))
+      ]).catch(err => {
+        // Only show offline page for network failures, not TLS/SSL errors
+        if (err.message === 'Failed to fetch' || err.message === 'timeout' || !navigator.onLine) {
+          return caches.open(CACHE_NAME).then(cache => cache.match(OFFLINE_URL));
+        }
+        throw err; // Let browser show native error for TLS/certificate issues
+      })
     );
     return;
   }
-  if (request.method !== 'GET') return;
+  
+  if (request.method !== 'GET' || url.origin !== location.origin) return;
+  
+  // Network-first for assets, with cache fallback
   event.respondWith(
-    caches.match(request).then(cached => {
-      const fetchPromise = fetch(request).then(response => {
+    fetch(request, { cache: 'no-cache' })
+      .then(response => {
         if (response.status === 200 && response.type === 'basic') {
           const clone = response.clone();
-            caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
+          caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
         }
         return response;
-      }).catch(() => cached);
-      return cached || fetchPromise;
-    })
+      })
+      .catch(() => caches.match(request))
   );
 });
