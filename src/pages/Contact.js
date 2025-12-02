@@ -36,12 +36,14 @@ function Contact() {
   return (
     <>
       <Helmet>
-        <title>Contact – Oluwatosin Adelaja</title>
-        <meta name="description" content="Get in touch with Oluwatosin." />
+        <title>Contact Oluwatosin Adelaja - Software Engineer | Speaking & Collaboration</title>
+        <meta name="description" content="Get in touch for software development projects, technical speaking engagements, conference talks, or collaboration opportunities. Available for React and React Native consulting." />
+        <meta property="og:title" content="Contact Oluwatosin Adelaja - Software Engineer" />
+        <meta property="og:description" content="Get in touch for software development projects, technical speaking engagements, conference talks, or collaboration opportunities." />
       </Helmet>
       <Section id="contact" className="max-w-3xl">
         <motion.h1 initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} className="text-3xl md:text-4xl font-display font-semibold gradient-text mb-8">Get In Touch</motion.h1>
-        <p className="text-gray-600 dark:text-white/70 mb-6">Have a project, question, or collaboration in mind? Drop a message and I will respond promptly.</p>
+        <p className="text-gray-600 dark:text-white/70 mb-6">Have a project, question, or collaboration in mind? Looking to invite me to speak at your tech event, conference, or meetup? Drop a message and I will respond promptly.</p>
         <form className="space-y-5" action="https://formspree.io/f/xnqgvoyj" method="POST" acceptCharset="UTF-8" onSubmit={handleSubmit}>
           <Card className="space-y-5 p-6">
           <div>

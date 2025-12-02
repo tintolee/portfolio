@@ -10,17 +10,32 @@
     @apply bg-white text-gray-900 font-sans antialiased;
     background: radial-gradient(circle at 20% 20%, #f3f6fb 0%, #ffffff 60%);
     min-height: 100vh;
+    animation: gradientShift 15s ease infinite;
   }
 
   /* Dark mode overrides */
   .dark body {
     @apply bg-bg text-white;
     background: radial-gradient(circle at 20% 20%, #1a1f2f 0%, #0b0d17 60%);
+    animation: gradientShiftDark 15s ease infinite;
+  }
+
+  @keyframes gradientShift {
+    0%, 100% { background: radial-gradient(circle at 20% 20%, #f3f6fb 0%, #ffffff 60%); }
+    50% { background: radial-gradient(circle at 80% 80%, #faf5ff 0%, #ffffff 60%); }
+  }
+
+  @keyframes gradientShiftDark {
+    0%, 100% { background: radial-gradient(circle at 20% 20%, #1a1f2f 0%, #0b0d17 60%); }
+    50% { background: radial-gradient(circle at 80% 80%, #1e1b2e 0%, #0b0d17 60%); }
   }
 
   ::selection { background: #8b5cf6; color: #fff; }
   :focus-visible { outline: none; }
-  *:focus-visible { @apply ring-2 ring-brand-purple ring-offset-2 ring-offset-white dark:ring-offset-bg transition; }
+  *:focus-visible { 
+    @apply ring-2 ring-brand-purple ring-offset-4 ring-offset-white dark:ring-offset-bg transition-all duration-200;
+    box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.1);
+  }
   .skip-link { @apply sr-only focus:not-sr-only; }
 }
 
@@ -31,7 +46,15 @@
   .gradient-text {
     background: linear-gradient(90deg,#8b5cf6,#ec4899,#a855f7);
     -webkit-background-clip: text;
-    @apply text-transparent font-display font-semibold tracking-tight;
+    @apply text-transparent font-display font-semibold tracking-tight leading-tight;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight leading-tight;
+  }
+
+  p {
+    @apply leading-relaxed;
   }
   /* Card surface: light default with dark override */
   .glass-card { @apply rounded-2xl bg-white/70 backdrop-blur-md shadow-soft border border-gray-200 transition; }

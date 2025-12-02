@@ -7,11 +7,11 @@ export default function Writing() {
   return (
     <>
       <Helmet>
-        <title>Writing – Technical Articles</title>
+        <title>Publications – Technical Articles</title>
         <meta name="description" content="Technical articles on React, React Native, architecture, performance, and DX." />
       </Helmet>
       <Section id="writing">
-        <h1 className="text-3xl md:text-4xl font-display font-semibold gradient-text mb-8">Technical Writing</h1>
+        <h1 className="text-3xl md:text-4xl font-display font-semibold gradient-text mb-8">Publications</h1>
         <div className="grid md:grid-cols-2 gap-6">
           {articles.map(a => (
             <Card key={a.slug} className="glass-card p-6">

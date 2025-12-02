@@ -10,8 +10,12 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>Oluwatosin Adelaja – React/React Native Engineer</title>
-        <meta name="description" content="I build web and mobile apps with React & React Native, design scalable architectures, and write technical articles." />
+        <title>Oluwatosin Adelaja | React & React Native Engineer - Software Developer Portfolio</title>
+        <meta name="description" content="Software engineer specializing in production-grade React and React Native applications. Building scalable architectures for NHS, fintech, and healthcare platforms. Technical writer and speaker." />
+        <meta property="og:title" content="Oluwatosin Adelaja | React & React Native Engineer" />
+        <meta property="og:description" content="Software engineer specializing in production-grade React and React Native applications. Building scalable architectures for NHS, fintech, and healthcare platforms." />
+        <meta name="twitter:title" content="Oluwatosin Adelaja | React & React Native Engineer" />
+        <meta name="twitter:description" content="Software engineer specializing in production-grade React and React Native applications. Building scalable architectures for NHS, fintech, and healthcare platforms." />
       </Helmet>
       <Section id="home">
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -30,7 +34,7 @@ function Home() {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="mt-6 text-gray-600 dark:text-white/70 max-w-prose"
             >
-              I build production-grade web and mobile applications using React and React Native, design scalable architectures, and share knowledge through technical writing. Focused on accessibility, performance, and developer experience.
+              I build production-grade web and mobile applications using React and React Native, design scalable architectures, and share knowledge through publications. Focused on accessibility, performance, and developer experience.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

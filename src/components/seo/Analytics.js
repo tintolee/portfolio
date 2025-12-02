@@ -16,7 +16,7 @@ export default function Analytics() {
       {/* Replace data-domain with your actual domain */}
       <script
         defer
-        data-domain="www.oluwatosinadelaja.com"
+        data-domain="www.tosinadelaja.com"
         src="https://plausible.io/js/script.js"
       />
     </Helmet>

@@ -1,4 +1,6 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
-Sitemap: https://www.oluwatosinadelaja.com/sitemap.xml
+Allow: /
+
+Sitemap: https://tosinadelaja.com/sitemap.xml

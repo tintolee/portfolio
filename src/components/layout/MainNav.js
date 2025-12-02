@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import logo from '../../Assets/logo.png';
 
@@ -9,7 +9,7 @@ const links = [
   { to: '/about', label: 'About' },
   { to: '/projects', label: 'Projects' },
   { to: '/experience', label: 'Experience' },
-  { to: '/writing', label: 'Writing' },
+  { to: '/writing', label: 'Publications' },
   { to: '/contact', label: 'Contact' }
 ];
 
@@ -59,22 +59,7 @@ function MainNav() {
         <Link to="/" className="flex items-center gap-2" aria-label="Home">
           <img src={logo} alt="Logo" className="h-10 w-auto" />
         </Link>
-        <div className="flex items-center gap-4">
-          <button
-            aria-label="Toggle color theme"
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className="rounded-xl px-3 py-2 bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 border border-black/10 dark:border-white/10 text-sm transition focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
-          >
-            {theme === 'dark' ? 'Light' : 'Dark'}
-          </button>
-          <button
-            className="sm:hidden inline-flex items-center justify-center rounded-xl p-2 bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10"
-            onClick={() => setOpen(!open)}
-            aria-label="Toggle navigation menu"
-          >
-            {open ? <X size={20} /> : <Menu size={20} />}
-          </button>
-        </div>
+        
         <ul className="hidden sm:flex items-center gap-6">
           {links.map(l => (
             <li key={l.to}>
@@ -88,6 +73,23 @@ function MainNav() {
             </li>
           ))}
         </ul>
+
+        <div className="flex items-center gap-3">
+          <button
+            aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            className="rounded-xl p-2 bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 border border-black/10 dark:border-white/10 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple"
+          >
+            {theme === 'dark' ? <Sun size={20} className="text-gray-700 dark:text-white/80" /> : <Moon size={20} className="text-gray-700 dark:text-white/80" />}
+          </button>
+          <button
+            className="sm:hidden inline-flex items-center justify-center rounded-xl p-2 bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10"
+            onClick={() => setOpen(!open)}
+            aria-label="Toggle navigation menu"
+          >
+            {open ? <X size={20} /> : <Menu size={20} />}
+          </button>
+        </div>
       </nav>
       <AnimatePresence>
         {open && (

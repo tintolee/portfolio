@@ -22,9 +22,15 @@ function SiteFooter() {
         <div>
           <h4 className="text-sm font-semibold mb-3 text-gray-800 dark:text-white/80">Connect</h4>
           <div className="flex gap-3">
-            <a href="https://github.com/tintolee" target="_blank" rel="noreferrer" className="p-2 rounded-lg bg-black/5 hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10 transition"><Github size={18} /></a>
-            <a href="https://www.linkedin.com/in/adelaja-oluwatosin/" target="_blank" rel="noreferrer" className="p-2 rounded-lg bg-black/5 hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10 transition"><Linkedin size={18} /></a>
-            <a href="mailto:hello@tosinadelaja.com" className="p-2 rounded-lg bg-black/5 hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10 transition"><Mail size={18} /></a>
+            <a href="https://github.com/tintolee" target="_blank" rel="noreferrer" className="p-2 rounded-lg bg-black/5 hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10 transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg group" aria-label="GitHub">
+              <Github size={18} className="group-hover:rotate-12 transition-transform" />
+            </a>
+            <a href="https://www.linkedin.com/in/adelaja-oluwatosin/" target="_blank" rel="noreferrer" className="p-2 rounded-lg bg-black/5 hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10 transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg group" aria-label="LinkedIn">
+              <Linkedin size={18} className="group-hover:rotate-12 transition-transform" />
+            </a>
+            <a href="mailto:hello@tosinadelaja.com" className="p-2 rounded-lg bg-black/5 hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10 transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg group" aria-label="Email">
+              <Mail size={18} className="group-hover:rotate-12 transition-transform" />
+            </a>
           </div>
         </div>
       </div>

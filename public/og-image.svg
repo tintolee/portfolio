@@ -1,14 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#8b5cf6" />
       <stop offset="50%" stop-color="#ec4899" />
       <stop offset="100%" stop-color="#a855f7" />
     </linearGradient>
+    <linearGradient id="textGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(139, 92, 246, 0.08)" stroke-width="1"/>
+    </pattern>
   </defs>
+  
+  <!-- Background -->
   <rect width="1200" height="630" fill="#0b0d17" />
-  <rect x="40" y="40" width="1120" height="550" rx="32" fill="url(#g)" opacity="0.15" />
-  <text x="60" y="200" font-size="86" font-family="Inter, Poppins, Arial, sans-serif" fill="white" font-weight="700">Oluwatosin Adelaja</text>
-  <text x="60" y="300" font-size="48" font-family="Inter, Arial, sans-serif" fill="#c4b5fd" font-weight="500">React & React Native Engineer</text>
-  <text x="60" y="380" font-size="34" font-family="Inter, Arial, sans-serif" fill="#ffffff" opacity="0.85">Web + mobile apps, scalable architectures, technical writing.</text>
+  
+  <!-- Grid pattern -->
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="1050" cy="100" r="180" fill="#8b5cf6" opacity="0.06"/>
+  <circle cx="150" cy="530" r="150" fill="#06b6d4" opacity="0.06"/>
+  
+  <!-- Gradient card -->
+  <rect x="40" y="40" width="1120" height="550" rx="32" fill="url(#g)" opacity="0.12" />
+  
+  <!-- Logo embedded as image (referencing the logo file) -->
+  <image href="logo192.png" x="60" y="80" width="80" height="80" filter="url(#glow)"/>
+  
+  <!-- Name -->
+  <text x="160" y="140" font-size="82" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" fill="white" font-weight="700">Oluwatosin Adelaja</text>
+  
+  <!-- Title with gradient -->
+  <text x="60" y="260" font-size="52" font-family="system-ui, -apple-system, sans-serif" fill="url(#textGrad)" font-weight="600">React & React Native Engineer</text>
+  
+  <!-- Description -->
+  <text x="60" y="350" font-size="36" font-family="system-ui, -apple-system, sans-serif" fill="#cbd5e1" font-weight="400">Building production-grade web and mobile applications</text>
+  <text x="60" y="400" font-size="36" font-family="system-ui, -apple-system, sans-serif" fill="#cbd5e1" font-weight="400">Designing scalable architectures and sharing insights</text>
+  
+  <!-- Website URL -->
+  <text x="60" y="520" font-size="32" font-family="ui-monospace, 'SF Mono', monospace" fill="#64748b" font-weight="500">tosinadelaja.com</text>
+  
+  <!-- Accent line -->
+  <line x1="60" y1="290" x2="1140" y2="290" stroke="url(#textGrad)" stroke-width="2" opacity="0.4"/>
 </svg>

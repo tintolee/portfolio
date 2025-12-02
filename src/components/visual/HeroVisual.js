@@ -14,7 +14,11 @@ function HeroVisual() {
       transition={{ duration: 0.8 }}
       className="relative h-[380px] md:h-[460px]"
     >
-      <div className="absolute inset-0 flex items-center justify-center">
+      <motion.div 
+        className="absolute inset-0 flex items-center justify-center"
+        animate={{ y: [0, -15, 0] }}
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+      >
         <div className="relative w-72 h-72 md:w-96 md:h-96">
           {!reduce && circles.map((_, i) => (
             <motion.span
@@ -54,7 +58,7 @@ function HeroVisual() {
             )}
           </motion.div>
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 }
