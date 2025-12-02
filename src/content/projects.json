@@ -1,5 +1,45 @@
 [
   {
+    "slug": "liaison-link",
+    "title": "Liaison Link",
+    "summary": "Enterprise healthcare platform serving 10,000+ NHS users. High-availability architecture with secure data flows, OAuth2/JWT authentication, and real-time capabilities.",
+    "stack": ["React Native", "TypeScript", "AWS", "OAuth2", "GraphQL"],
+    "url": "https://apps.apple.com/gb/app/liaison-link/id1508557388",
+    "appStore": true
+  },
+  {
+    "slug": "sendsprint",
+    "title": "SendSprint",
+    "summary": "Cross-border payment and money transfer application. Built with resilient architecture, secure transaction handling, and optimized performance for financial operations.",
+    "stack": ["React Native", "TypeScript", "Fintech", "Security"],
+    "url": "https://apps.apple.com/gb/app/sendsprint/id6741528730",
+    "website": "https://sendsprint.com",
+    "appStore": true
+  },
+  {
+    "slug": "connecme2",
+    "title": "ConnecMe2",
+    "summary": "Social connectivity platform with real-time messaging, user presence, and scalable backend integration. Focus on performance and user experience.",
+    "stack": ["React Native", "WebSocket", "TypeScript", "Firebase"],
+    "url": "https://apps.apple.com/gb/app/connecme2/id1567773730",
+    "appStore": true
+  },
+  {
+    "slug": "jarvis-lifetime-pension",
+    "title": "Jarvis Lifetime Pension",
+    "summary": "Financial planning and pension management application. Secure architecture with GDPR compliance, encrypted storage, and intuitive user flows.",
+    "stack": ["React Native", "TypeScript", "Finance", "Security"],
+    "url": "https://apps.apple.com/gb/app/jarvis-lifetime-pension/id1608057916",
+    "appStore": true
+  },
+  {
+    "slug": "specnota",
+    "title": "Specnota",
+    "summary": "Modern web platform for streamlined workflows and collaboration. Built with React, TypeScript, and scalable architecture for optimal performance.",
+    "stack": ["React", "TypeScript", "Web", "Performance"],
+    "url": "https://specnota.com"
+  },
+  {
     "slug": "design-system",
     "title": "Design System Toolkit",
     "summary": "Modular, accessible component library and token pipeline accelerating UI iteration across products.",
