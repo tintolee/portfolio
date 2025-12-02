@@ -1,4 +1,4 @@
-const CACHE_NAME = 'portfolio-v2';
+const CACHE_NAME = 'portfolio-v3';
 const OFFLINE_URL = '/offline.html';
 
 self.addEventListener('install', event => {
@@ -25,16 +25,17 @@ self.addEventListener('fetch', event => {
   // Only handle same-origin navigations for offline fallback
   if (request.mode === 'navigate' && url.origin === location.origin) {
     event.respondWith(
-      Promise.race([
-        fetch(request),
-        new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), 8000))
-      ]).catch(err => {
-        // Only show offline page for network failures, not TLS/SSL errors
-        if (err.message === 'Failed to fetch' || err.message === 'timeout' || !navigator.onLine) {
-          return caches.open(CACHE_NAME).then(cache => cache.match(OFFLINE_URL));
-        }
-        throw err; // Let browser show native error for TLS/certificate issues
-      })
+      fetch(request)
+        .catch(() => {
+          // On any fetch failure, serve offline page from cache
+          return caches.match(OFFLINE_URL).then(response => {
+            return response || new Response('Offline', { 
+              status: 503, 
+              statusText: 'Service Unavailable',
+              headers: new Headers({ 'Content-Type': 'text/html' })
+            });
+          });
+        })
     );
     return;
   }
@@ -43,14 +44,18 @@ self.addEventListener('fetch', event => {
   
   // Network-first for assets, with cache fallback
   event.respondWith(
-    fetch(request, { cache: 'no-cache' })
+    fetch(request)
       .then(response => {
-        if (response.status === 200 && response.type === 'basic') {
+        if (response && response.status === 200) {
           const clone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
+          caches.open(CACHE_NAME).then(cache => cache.put(request, clone)).catch(() => {});
         }
         return response;
       })
-      .catch(() => caches.match(request))
+      .catch(() => {
+        return caches.match(request).then(cached => {
+          return cached || new Response('Not found', { status: 404 });
+        });
+      })
   );
 });
