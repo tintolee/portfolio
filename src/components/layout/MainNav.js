@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '../../Assets/logo.png';
 
 const links = [
   { to: '/', label: 'Home' },
@@ -55,7 +56,9 @@ function MainNav() {
   return (
     <header className={`fixed top-0 inset-x-0 z-50 transition ${scrolled ? 'backdrop-blur-md bg-white/80 dark:bg-bg/80 shadow-glass' : 'bg-transparent'} `}>
       <nav className="container-responsive flex items-center justify-between h-20">
-        <Link to="/" className="text-xl font-display font-semibold gradient-text">Oluwatosin</Link>
+        <Link to="/" className="flex items-center gap-2" aria-label="Home">
+          <img src={logo} alt="Logo" className="h-10 w-auto" />
+        </Link>
         <div className="flex items-center gap-4">
           <button
             aria-label="Toggle color theme"
