@@ -22,7 +22,7 @@ function About() {
               I'm a software engineer who builds production-grade applications that serve thousands of users daily. My work spans <strong>React</strong> and <strong>React Native</strong> ecosystems, where I design high-availability architectures, implement secure data flows, and ship resilient systems that handle real-world complexity.
             </p>
             <p className="text-gray-700 dark:text-white/80 leading-relaxed">
-              Currently at <strong>Liaison Group (UK)</strong>, I architected and delivered <strong>Liaison Link</strong> - an enterprise platform serving 10,000+ NHS users with secure, scalable infrastructure. I've reduced release cycles by 80% through CI/CD automation, improved performance by 25-40% via code-splitting and caching strategies, and strengthened system observability across distributed microservices.
+              At <strong>Liaison Group (UK)</strong>, I architected and delivered <strong>Liaison Link</strong> - an enterprise platform serving 5,000+ NHS users with secure, scalable infrastructure. I've reduced release cycles by 80% through CI/CD automation, improved performance by 25-40% via code-splitting and caching strategies, and strengthened system observability across distributed microservices.
             </p>
           </Card>
 
@@ -43,6 +43,13 @@ function About() {
             </p>
             <p className="text-gray-700 dark:text-white/80 leading-relaxed">
               My writing focuses on practical frameworks for building observable, fault-tolerant systems - drawing from real production experience scaling fintech and healthcare platforms across challenging network conditions and regulatory environments.
+            </p>
+          </Card>
+
+          <Card className="prose max-w-none dark:prose-invert p-6">
+            <h2 className="text-2xl font-semibold gradient-text mb-4">Awards & Recognition</h2>
+            <p className="text-gray-700 dark:text-white/80 leading-relaxed">
+              Awarded <strong>Tech Thought Leadership of the Year</strong> for contributions to engineering research, publications, and community impact.
             </p>
           </Card>
 

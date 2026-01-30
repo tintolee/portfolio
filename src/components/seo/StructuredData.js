@@ -37,7 +37,7 @@ export default function StructuredData() {
       url: 'https://www.liaisongroup.co.uk/'
     },
     alumniOf: 'Software Engineering',
-    email: 'hello@tosinadelaja.com'
+    email: 'adelajaolutosin@gmail.com'
   };
 
   const website = {

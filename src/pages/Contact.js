@@ -69,7 +69,7 @@ function Contact() {
           {status==='error' && (
             <div className="text-xs text-red-400">{error}</div>
           )}
-          <div className="text-xs text-gray-500 dark:text-white/40 flex items-center gap-2"><Mail size={14}/> Or email: hello@tosinadelaja.com</div>
+          <div className="text-xs text-gray-500 dark:text-white/40 flex items-center gap-2"><Mail size={14}/> Or email: adelajaolutosin@gmail.com</div>
         </form>
       </Section>
     </>

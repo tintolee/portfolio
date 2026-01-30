@@ -28,7 +28,7 @@ function SiteFooter() {
             <a href="https://www.linkedin.com/in/adelaja-oluwatosin/" target="_blank" rel="noreferrer" className="p-2 rounded-lg bg-black/5 hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10 transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg group" aria-label="LinkedIn">
               <Linkedin size={18} className="group-hover:rotate-12 transition-transform" />
             </a>
-            <a href="mailto:hello@tosinadelaja.com" className="p-2 rounded-lg bg-black/5 hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10 transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg group" aria-label="Email">
+            <a href="mailto:adelajaolutosin@gmail.com" className="p-2 rounded-lg bg-black/5 hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10 transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg group" aria-label="Email">
               <Mail size={18} className="group-hover:rotate-12 transition-transform" />
             </a>
           </div>

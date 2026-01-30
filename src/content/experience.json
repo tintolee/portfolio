@@ -1,81 +1,244 @@
 [
   {
-    "company": "Liaison Group, UK",
+    "company": "Liaison Group",
     "title": "Software Developer",
+    "employmentType": "Full-time",
     "period": "Nov 2022 – Oct 2025",
-    "summary": "Designed and shipped high-availability web/mobile architecture for Liaison Link, serving 10,000+ NHS users with secure, scalable delivery.",
+    "duration": "3 yrs",
+    "location": "London Area, United Kingdom · Remote",
     "highlights": [
-      "Implemented HA architecture for enterprise platform with secure data flows",
-      "Built distributed clients integrating REST, GraphQL, and WebSockets for realtime",
-      "Contributed to microservices and event-driven patterns with platform teams",
-      "Integrated AWS S3, CloudFront, Lambda to boost performance and scalability",
-      "Established CI/CD across Azure DevOps, GitHub Actions, Fastlane (−80% release time)",
-      "Led system design sessions, authored RFCs and future architecture patterns",
-      "Improved performance by 25–40% via code-splitting, caching, bundle analysis",
-      "Strengthened observability with Crashlytics, Firebase, PostHog",
-      "Delivered OAuth2/JWT auth with encrypted storage and GDPR-aligned patterns",
-      "Mentored 5 engineers and raised code quality/discipline across squads"
+      "Worked on a React Native workforce management app used daily by NHS staff across multiple Trusts.",
+      "Integrated new backend APIs to support detailed leave entitlements; cut manual HR adjustments by 30-40% and improved payroll accuracy.",
+      "Reworked core leave journeys such as applications, entitlements and approvals, leading to a 25% increase in feature adoption.",
+      "Built and maintained key workforce features including Shift Swap, Timesheets and native calendar synchronisation.",
+      "Performance and workflow improvements helped managers save 200-250 staff hours per month (£8k-£10k in operational savings).",
+      "Contributed to Liaison Link becoming the highest-rated product in the company’s SaaS portfolio."
+    ],
+    "skills": [
+      "State Management",
+      "React Native",
+      "Front end Architecture",
+      "JavaScript",
+      "Performance Optimisation",
+      "Product-Focused Development",
+      "TypeScript",
+      "Test-Driven Development",
+      "Front-End Development",
+      "Mean Stack",
+      "Real-time Systems (WebSockets)",
+      "Cascading Style Sheets (CSS)",
+      "React.js",
+      "Fintech Applications",
+      "Jest",
+      "Engineering",
+      "API Integration",
+      "Front-End Design",
+      "Microsoft Azure"
     ]
   },
   {
-    "company": "Sprint Technologies, Nigeria",
+    "company": "Sprint Technology Solutions Inc.",
     "title": "Software Developer",
-    "period": "Apr 2022 – Nov 2022",
-    "summary": "Delivered high-volume fintech apps with real-time dashboards and resilient architecture.",
-    "highlights": [
-      "Built React/TypeScript dashboards with WebSockets/SSE for live data",
-      "Applied DDD, MVVM, clean architecture reducing duplication by 35%",
-      "Set up CI/CD (GitHub Actions, Fastlane) for automated store delivery",
-      "Hardened resiliency with retries, backoff, structured error states",
-      "Implemented secure auth and data handling per financial regulations",
-      "Cut production crashes by 40% using observability and load-time profiling"
+    "employmentType": "Full-time",
+    "period": "May 2022 – Aug 2023",
+    "duration": "1 yr 4 mos",
+    "location": "Lagos, Nigeria · Remote",
+    "projects": [
+      {
+        "name": "SendSprint Admin Dashboard (Internal Platform)",
+        "bullets": [
+          "Built the front end for an internal dashboard to monitor users and transactions; reduced manual reconciliation by 40%.",
+          "Implemented retry flows for failed transactions.",
+          "Added role-based access control, improving security and operational clarity.",
+          "Optimised performance for high transaction volumes using lazy loading and caching.",
+          "Built reporting tools and analytics widgets."
+        ]
+      },
+      {
+        "name": "SendSprint Consumer Web App (Remittance Platform)",
+        "bullets": [
+          "Developed a web app for international money transfers with real-time status updates, driving a 30% increase in repeat transactions.",
+          "Redesigned the KYC flow with Veriff into a clear, step-by-step experience, reducing verification time to under 5 min.",
+          "Added 3D Secure and additional fraud checks; reduced fraud by over 35% within 3 months.",
+          "Improved stability and performance through better API handling, cutting page load times by 40%."
+        ]
+      },
+      {
+        "name": "SendScript Business Platform (B2B Payments)",
+        "bullets": [
+          "Built a B2B payments platform for SMEs and corporates, reducing onboarding from days to under 24 hours via automated KYC.",
+          "Implemented bulk payments with CSV/Excel uploads and client-side validation, reducing manual processing by 60%.",
+          "Added multi-user access with roles (Admin/Finance/Viewer) to support corporate workflows.",
+          "The platform launch increased overall transaction volume by 40% in the first quarter and opened a new revenue stream for the company."
+        ]
+      }
+    ],
+    "skills": [
+      "State Management",
+      "React Native",
+      "Front end Architecture",
+      "JavaScript",
+      "Performance Optimisation",
+      "GraphQL",
+      "Product-Focused Development",
+      "AWS (S3)",
+      "Fraud Prevention",
+      "TypeScript",
+      "Front-End Development",
+      "Real-time Systems (WebSockets)",
+      "Next.js",
+      "React.js",
+      "Node.js",
+      "KYC & Identity Verification",
+      "Fintech Applications",
+      "Redux.js",
+      "Payments & Remittance Systems",
+      "API Integration"
     ]
   },
   {
-    "company": "Esoft Response, UK",
+    "company": "eSoft Response",
     "title": "Software Developer",
-    "period": "Jul 2021 – Mar 2022",
-    "summary": "Built SEO-friendly SSR/SSG apps with Next.js and reusable TypeScript UI libraries.",
-    "highlights": [
-      "Delivered Next.js SSR/SSG apps improving SEO and render performance",
-      "Authored reusable TypeScript UI libraries for cross-squad consistency",
-      "Integrated AWS (S3, CloudFront, Amplify) into automated release workflows",
-      "Achieved 90%+ test coverage across components and business flows"
+    "employmentType": "Full-time",
+    "period": "Mar 2022 – Jul 2023",
+    "duration": "1 yr 5 mos",
+    "location": "London, England, United Kingdom · Remote",
+    "projects": [
+      {
+        "name": "Specnota SaaS Collaboration Platform",
+        "bullets": [
+          "Designed and built the front-end architecture using React and TypeScript, helping teams cut document preparation time by 50% and speed up approvals by 40%.",
+          "Implemented real-time collaborative editing with WebSockets and shared state; reduced version conflicts by 30%.",
+          "Added autosave, offline support and local recovery, eliminating data loss for users.",
+          "Built inline comments and change tracking tied to document sections, reducing review cycles by 40%."
+        ]
+      },
+      {
+        "name": "Jarvis Pension Fintech Mobile App (iOS & Android)",
+        "bullets": [
+          "Developed key React Native screens that improved onboarding completion by 25% through simpler navigation and clearer UI.",
+          "Built interactive charts for balances, growth and contributions to make financial data easier to understand.",
+          "Created a reusable component system, reducing development time for new features by around 30%.",
+          "Improved performance and data security, helping the app reach production readiness."
+        ]
+      },
+      {
+        "name": "ConnecMe2 Mentorship & Career Platform (Web & Mobile)",
+        "bullets": [
+          "Built both web and mobile apps using a shared design system, contributing to a 40% growth in active users after beta.",
+          "Added real-time chat and notifications, increasing average session time by 30%.",
+          "Implemented file uploads to AWS S3 with retry logic to handle unstable networks.",
+          "Optimised performance with lazy loading, caching and React Query, reducing load times by 35%."
+        ]
+      }
+    ],
+    "skills": [
+      "State Management",
+      "React Native",
+      "Front end Architecture",
+      "JavaScript",
+      "Performance Optimisation",
+      "GraphQL",
+      "Product-Focused Development",
+      "AWS (S3)",
+      "Fraud Prevention",
+      "Amazon Web Services (AWS)",
+      "Front-End Development",
+      "Real-time Systems (WebSockets)",
+      "React.js",
+      "Node.js",
+      "Fintech Applications",
+      "Apollo GraphQL",
+      "Redux.js",
+      "API Integration"
     ]
   },
   {
-    "company": "Scrumanac, Nigeria",
-    "title": "Software Developer",
+    "company": "Scrumanac",
+    "title": "Front end Developer",
+    "employmentType": "Full-time",
     "period": "Apr 2020 – Jun 2021",
-    "summary": "Built modern React and React Native apps with scalable patterns and native modules.",
+    "duration": "1 yr 3 mos",
+    "location": "Abuja, Federal Capital Territory, Nigeria",
     "highlights": [
-      "Applied MVVM/MVP patterns across web and mobile projects",
-      "Integrated Django REST and WebSockets for realtime updates",
-      "Developed Swift/Kotlin native modules (biometrics, background tasks, uploads)",
-      "Implemented CI/CD on Azure DevOps improving deployment reliability"
+      "Built and maintained full-stack applications with a strong focus on front-end performance and reliability.",
+      "Integrated SQL-backed APIs and implemented caching strategies to improve system performance.",
+      "Led front-end development of a landlord management platform, onboarding 20+ landlords within 2 months of launch."
+    ],
+    "skills": [
+      "State Management",
+      "React Native",
+      "Front end Architecture",
+      "Performance Optimisation",
+      "GraphQL",
+      "Product-Focused Development",
+      "AWS (S3)",
+      "NestJS",
+      "Fraud Prevention",
+      "TypeScript",
+      "Amazon Web Services (AWS)",
+      "Front-End Development",
+      "Kubernetes",
+      "Real-time Systems (WebSockets)",
+      "Next.js",
+      "Docker",
+      "React.js",
+      "Node.js",
+      "Fintech Applications",
+      "Apollo GraphQL",
+      "API Integration"
     ]
   },
   {
-    "company": "Savannah Health Systems Innovations, Nigeria",
-    "title": "Software Developer",
+    "company": "Savannah Health Systems Innovation",
+    "title": "Frontend Developer",
+    "employmentType": "Full-time",
     "period": "Jul 2018 – Mar 2020",
-    "summary": "Delivered distributed healthcare workflow systems with secure EHR integrations.",
+    "duration": "1 yr 9 mos",
+    "location": "Abuja, Federal Capital Territory, Nigeria",
     "highlights": [
-      "Built React/React Native/Vue UIs for clinical workflows",
-      "Improved efficiency ~40% through performance and reliability work",
-      "Ensured secure communication and high availability in regulated settings"
+      "Participated in a full rebuild of the company website from scratch with a team of engineers.",
+      "Expanded technical expertise by working with Python/Django alongside front-end technologies.",
+      "Developed ERP systems for multiple organizations to streamline operational workflows."
+    ],
+    "skills": [
+      "State Management",
+      "Front end Architecture",
+      "JavaScript",
+      "Performance Optimisation",
+      "GraphQL",
+      "Product-Focused Development",
+      "TypeScript",
+      "Front-End Development",
+      "Real-time Systems (WebSockets)",
+      "React.js",
+      "Django",
+      "Fintech Applications",
+      "API Integration",
+      "PostgreSQL"
     ]
   },
   {
-    "company": "UVK, Cotonou",
-    "title": "Software Developer Intern",
+    "company": "UVK",
+    "title": "Software Developer intern",
+    "employmentType": "Full-time",
     "period": "May 2017 – Dec 2017",
-    "summary": "Contributed to web/mobile apps and learned production delivery practices.",
+    "duration": "8 mos",
+    "location": "Cotonou, Littoral, Benin · Hybrid",
     "highlights": [
-      "Supported JS/TS, React, React Native development",
-      "Assisted debugging, testing, and releases in agile teams",
-      "Practiced REST integration, HTTP, and client–server principles",
-      "Maintained technical documentation for system changes"
+      "Assisted in the development of web applications using JavaScript, HTML, CSS.",
+      "Supported debugging, testing, and feature releases in production environments.",
+      "Worked with Git and Agile workflows; gained hands-on experience with APIs and databases."
+    ],
+    "skills": [
+      "State Management",
+      "Front end Architecture",
+      "JavaScript",
+      "Performance Optimisation",
+      "Front-End Development",
+      "Real-time Systems (WebSockets)",
+      "Fintech Applications",
+      "API Integration"
     ]
   }
 ]
