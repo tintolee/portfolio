@@ -9,6 +9,7 @@ const Skills = lazy(() => import(/* webpackChunkName: "skills" */ './pages/Skill
 const Experience = lazy(() => import(/* webpackChunkName: "experience" */ './pages/Experience'));
 const Contact = lazy(() => import(/* webpackChunkName: "contact" */ './pages/Contact'));
 const Writing = lazy(() => import(/* webpackChunkName: "writing" */ './pages/Writing'));
+const InvoiceFlowProPrivacy = lazy(() => import(/* webpackChunkName: "invoice-flow-pro-privacy" */ './pages/InvoiceFlowProPrivacy'));
 const NotFound = lazy(() => import(/* webpackChunkName: "not-found" */ './pages/NotFound'));
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/writing" element={<Writing />} />
+            <Route path="/invoice-flow-pro-privacy" element={<InvoiceFlowProPrivacy />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
